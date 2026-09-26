@@ -1,0 +1,21 @@
+.Heat-module__UuEXwq__chunk {
+  animation: Heat-module__UuEXwq__cool calc(1s + var(--heat, 0) * 0.5s) linear;
+}
+@keyframes Heat-module__UuEXwq__cool {
+  0% {
+    color: var(--color-heat-5);
+    text-shadow: 0 0 calc(var(--heat, 0) * 14px) var(--color-heat-4);
+  }
+  30% {
+    color: var(--color-heat-4);
+  }
+  65% {
+    color: var(--color-heat-3);
+    text-shadow: 0 0 #0000;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .Heat-module__UuEXwq__chunk {
+    animation: none;
+  }
+}
